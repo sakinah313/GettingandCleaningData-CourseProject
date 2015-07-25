@@ -79,6 +79,6 @@ tidyData<-aggregate(.~Subject+Activity,newData,mean)
 # order the data
 tidyData<-tidyData[order(tidyData$Subject,tidyData$Activity),]
 # write the new clean data in txt file
-write.table(tidyData,file="Tidys.txt", row.names = FALSE)
+write.table(tidyData,file="Tidy.txt", row.names = FALSE)
 
 
